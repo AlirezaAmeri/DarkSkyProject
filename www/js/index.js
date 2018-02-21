@@ -33,7 +33,7 @@ $('form').submit(function(event){
 //excluding all unnecessary information from JSON including
 //currently,flags,alerts,hourly,minutely
 function createTimeMachineAPIcall(desired_time, c_lat, c_long) {
-  var apiKey       = '0716b0c482c045e47ec0e9f3343c5e6a';
+  var apiKey       = 'YOUR DARKSKY API KEY';
 	var api_url     = 'https://api.darksky.net/forecast/' + apiKey + "/" +
                     c_lat + "," + c_long + "," + desired_time +
                     "?exclude=currently,flags,alerts,hourly,minutely&callback=?";
@@ -176,7 +176,7 @@ function GoogleAPIinitialization() {
 //This API is used for autofill feature when city is getting selected
 function addGoogleAPIscriptToDOM() {
   var google_api = document.createElement('script');
-	var api_key = 'AIzaSyDhL2GYz6s7DX_BYSBO8u8qH5Pxkyzh6b4';
+	var api_key = 'YOUR GOOGLE MAP API KEY';
 
 	google_api.src = 'https://maps.googleapis.com/maps/api/js?key='+ api_key +'&callback=GoogleAPIinitialization&libraries=places,geometry';
 	document.body.appendChild(google_api);
