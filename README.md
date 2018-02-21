@@ -35,3 +35,5 @@ The hierarchy of the project is as follows:
   - Google API extracts the longitude and latitude information of the selected location and stores them in global variables. 
   - Then the Time Machine request calls will be executed using the Darksky API. With that, we can retrieve the weather information in the past days. However, this call will be done for each of the 7 days in the past week. Thereby, the JSON responses have to be handled separately for all the 7 API calls. 
   - After the weather data is extracted from the JSON files, they will be used to create the main structure of the GUI. Here, I add “div” tags to the HTML body (DOM). In each “div” section, I show the day, the date, an animated figure, humidity, minimum temperature, and maximum temperature. The animated figures for different weather conditions are enabled using DarkSky extension called skycon.
+  
+## Note: Remember to replace your own API keys for DARK SKY and GOOGLE MAP API keys; Otherwise, the code won't work. 
